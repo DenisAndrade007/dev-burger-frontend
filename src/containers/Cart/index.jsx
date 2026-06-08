@@ -1,0 +1,20 @@
+import Logo from '../../assets/Logo.png'; 
+import { CartItems, CartResume } from '../../components';
+import { Container, Banner, Title, Content } from './styles';
+
+export function Cart () {
+    return (
+       <Container>
+            <Banner>
+                <img src={Logo} alt="logo devclub" />
+            </Banner>
+
+            <Title>Checkout - Pedido </Title>
+            <Content>
+                <CartItems />
+                <CartResume />
+            </Content>
+       </Container>  
+
+    );
+}
