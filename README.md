@@ -1,16 +1,49 @@
-# React + Vite
+# DevBurger — Frontend
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Interface de usuário do sistema de delivery **DevBurger**, com autenticação, 
+listagem de produtos, carrinho, checkout com pagamento e gestão de pedidos.
 
-Currently, two official plugins are available:
+> 🚧 Projeto em evolução — deploy e testes automatizados em andamento.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## 🛠️ Stack
 
-## React Compiler
+**Core:** React 18 · Vite · JavaScript (ES6+)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Estilização:** Styled Components · Material UI (MUI) · Phosphor Icons
 
-## Expanding the ESLint configuration
+**Roteamento:** React Router DOM
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+**Formulários e validação:** React Hook Form · Yup
+
+**Consumo de API:** Axios
+
+**Pagamentos:** Stripe
+
+**UI/UX:** React Toastify (notificações) · Swiper · React Multi Carousel · React Select
+
+**Qualidade de código:** ESLint · Prettier
+
+## ⚙️ Como rodar localmente
+
+### Pré-requisitos
+- Node.js 18+
+- Yarn ou npm
+
+### Passos
+
+```bash
+# Clone o repositório
+git clone https://github.com/DenisAndrade007/dev-burger-frontend.git
+cd dev-burger-frontend
+
+# Instale as dependências
+yarn install
+# ou: npm install
+
+# Configure as variáveis de ambiente
+cp .env.example .env
+# Edite o .env com a URL da sua API
+
+# Rode o projeto
+yarn dev
+# ou: npm run dev
